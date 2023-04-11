@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savik Transport</title>
+    
+</head>
+<link rel="stylesheet" href="css/project1.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: 'Roboto', sans-serif;;
+        margin: 0px;
+        padding:0px;
+        background:url('background_truck.jpg');
+        background-size: cover
+        
+    }
+    .left{
+        
+        border: 2px solid black;
+        display: inline-block;
+        position: absolute;
+        left:33px;
+        top:20px;
+
+    }
+    .mid{
+        /* border: 2px solid red; */
+        display: block;
+        width: 45%;
+        margin: 18px auto;
+    
+
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        right:33px;
+        top:20px;
+        /* border: 2px solid green; */
+
+    }
+    .navebar{
+        display: inline-block;
+
+    }
+    .navebar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navebar li a{
+        color: white;
+        text-decoration:none;
+        padding: 25px;
+    }
+    .navebar li a:hover,.navebar li a.active{
+        color: black;
+        text-decoration:underline;
+    
+    }
+    .left img{
+        width: 63px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: darkgrey;
+        border:2px solid black;
+        border-radius: 8px; /*8px work always*/
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color:grey ;
+    
+    }
+    .allbox{
+        /* border:2px solid black; */
+        display: inline-block;
+        width: 80%;
+        margin:50px auto;
+        padding:30px;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        
+        box-sizing: border-box;
+
+    }
+    .box{
+        border:2px solid white;
+        display: inline-block;
+        width:20%;
+        margin:30px 50px;
+        padding: 3px;
+        top:150px;
+        background: white;
+        border-radius: 8px;
+    }
+    #box1{
+        position: relative;
+        left: auto;
+        top: auto;
+        float: left;
+        
+    }
+    #box2{
+        margin-left: 105px;
+        
+        
+        
+        
+    }
+    #box3{
+        position: relative;
+        right:auto;
+        top: auto;
+        float:right;
+        
+    }
+    #box4{ 
+        position: relative;
+        left: auto;
+        top: auto;
+        float: left;
+        
+    }
+    #box5{ 
+        margin-left: 105px;
+    }
+    #box6{ 
+        position: relative;
+        right:auto;
+        top: auto;
+        float:right;
+      
+    }
+    #box1 img{
+        width: 220px;
+        margin-left: 7px;
+    }
+    .name{
+        text-align:center;
+    }
+    .info{
+        text-align: justify;
+        
+    }
+    #box4 img{
+        width: 200px;
+        margin-left: 7px;
+    }
+    #box2 img{
+        width: 220px;
+        margin-left: 7px;
+        margin-top: 10px;
+    }
+    #b2{
+        margin-top: 11px;
+    }
+    #box5 img{
+        width: 215px;
+        margin-left: 7px;
+    }
+    #box3 img{
+        width: 220px;
+        margin-left: 7px;
+        margin-top: 27px;
+    }
+    #b3{
+        margin-top: 13px;
+    }
+    #box6 img{
+        width: 220px;
+        margin-left: 7px;
+        margin-top: 5px;
+    }
+    .socialmedia{
+        /* border: 2px solid black; */
+        position: fixed;
+        left: 3px;
+        display:block;
+        width:3%;
+        margin:250px 5px;
+        padding-left:3px;
+    
+        
+    }
+    #instagram img{
+        width: 40px;
+        /* padding-left: 4px; */
+        border-radius: 10px;
+        /* border: 2px solid black; */
+        border-radius: 10px;
+    }
+    #facebook img{
+        width:40px;
+        border-radius: 10px;
+        /* border: 2px solid black; */
+        margin-top: 7px;
+    }
+    #twitter img{
+        width: 45px;
+        margin-top: 8px;
+    
+    }
+
+</style>
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="logo.png" alt="Savik">
+            <div>PRAWAS</div>
+
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navebar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href='#'>About us</a></li>
+                <!-- <li><a href="#">services</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedbackform.html">Feedback</a></li>
+            </ul>
+
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <a href="https://mail.google.com/mail/u/0/#inbox"><button class="btn">Email us</button></a>
+            <a href="https://www.google.com/maps"><button class="btn">Directions</button></a>
+
+        </div>
+
+    </header>
+    <div class="allbox">
+        <div class="box" id="box1">
+            <div class="name">Tipper trucks</div>
+            <img src="tipper_truck.jpg" alt="tipper_truck">
+            <div>
+                <a href=" bookingform.html"><button class="btn" type="button">Book now</button></a>
+                <div class="info">Advance booking of tipper trucks can be done from here</div>
+            </div>
+        </div>
+       <div class="box" id="box2">
+        <div class="name">Goods carrier</div>
+        <img src="goods_carriers.webp" alt="goodscarrier">
+        
+        <div>
+           <a href=" bookingform.html"><button class="btn" id="b2" type="button">Book now</button></a>
+            <div class="info">Advance booking of goods carriers can be done from here</div>
+        </div>
+            
+       </div>
+       <div class="box" id="box3">
+           <div class="name">Trailer trucks</div>
+           <img src="trailer_truck.png" alt="trailer_truck">
+           <div>
+            <a href="bookingform.html"><button class="btn" id="b3" type="button">Book now</button></a>
+                <div class="info">Advance booking of Trailer trucks can be done from here</div>
+            </div>
+        </div>
+
+      <div class="box" id="box4">
+        <div class="name">Tanker trucks</div>
+        <br>
+        <img src="tanker_trucks1.jpg" alt="tanker_trucks1">
+        <div>
+            <a href=" bookingform.html"><button class="btn">Book now</button></a>
+            <div class="info">Advance booking of tanker trucks can be done from here</div>
+        </div>
+            
+      </div>
+      <div class="box" id="box5">
+        <div class="name">Cargo trucks</div>
+        <img src="cargo_truck.png" alt="cargo_truck">
+        <div>
+            <a href=" bookingform.html"><button class="btn" >Book now</button></a>
+            <div class="info">Advance booking of cargo trucks can be done from here</div>
+        </div>
+      </div>
+      <div class="box" id="box6">
+            <div class="name">Haul truck</div>
+            <img src="haul_truck.png" alt="haul_truck">
+            <div>
+                <a href="bookingform.html"><button class="btn" >Book now</button></a>
+                <div class="info">Advance booking of haul truck can be done from here</div>
+            </div>
+
+      </div>
+    </div>
+      <!-- invove socialmedia tags -->
+      <div class="socialmedia">
+          <div id="instagram">
+              <a href="https://www.instagram.com/">
+                <img src="instagramlogo.png" alt="insta"></a>
+          </div>
+          <div id="facebook">
+            <a href="https:www.facebook.com/">
+              <img src="facebooklogo.png" alt="FB"></a>
+        </div>
+        <div id="twitter">
+            <a href="https:www.twitter.com/">
+              <img src="Twitter-Logo.png" alt="tweet"></a>
+        </div>
+      </div>
+    
+    
+    
+    
+</body>
+</html>
